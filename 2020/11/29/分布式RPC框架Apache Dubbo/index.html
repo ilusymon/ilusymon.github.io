@@ -6,15 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Dubbo | 赖新明的个人博客</title>
+  <title>Dubbo | symon&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分布式RPC框架Apache Dubbo1. 软件架构的演进过程软件架构的发展经历了由单体架构、垂直架构、SOA架构到微服务架构的演进过程，下面我们分别了解一下这几个架构。 1.1 单体架构 一个归档包（例如war格式或者Jar格式）包含了应用所有功能的应用程序，我们通常称之为单体应用。架构单体应用的方法论，我们称之为单体应用架构，这是一种比较传统的架构风格。。  架构说明：  全部功能集中在一个">
+  <meta name="description" content="分布式RPC框架Apache Dubbo1. 软件架构的演进过程软件架构的发展经历了由单体架构、垂直架构、SOA架构到微服务架构的演进过程，下面我们分别了解一下这几个架构。 1.1 单体架构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dubbo">
 <meta property="og:url" content="http://example.com/2020/11/29/%E5%88%86%E5%B8%83%E5%BC%8FRPC%E6%A1%86%E6%9E%B6Apache%20Dubbo/index.html">
-<meta property="og:site_name" content="赖新明的个人博客">
-<meta property="og:description" content="分布式RPC框架Apache Dubbo1. 软件架构的演进过程软件架构的发展经历了由单体架构、垂直架构、SOA架构到微服务架构的演进过程，下面我们分别了解一下这几个架构。 1.1 单体架构 一个归档包（例如war格式或者Jar格式）包含了应用所有功能的应用程序，我们通常称之为单体应用。架构单体应用的方法论，我们称之为单体应用架构，这是一种比较传统的架构风格。。  架构说明：  全部功能集中在一个">
-<meta property="og:locale">
+<meta property="og:site_name" content="symon&#39;s blog">
+<meta property="og:description" content="分布式RPC框架Apache Dubbo1. 软件架构的演进过程软件架构的发展经历了由单体架构、垂直架构、SOA架构到微服务架构的演进过程，下面我们分别了解一下这几个架构。 1.1 单体架构">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140033.png">
 <meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140148.png">
 <meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140231.png">
@@ -62,12 +62,13 @@
 <meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119145847.png">
 <meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119145806.png">
 <meta property="article:published_time" content="2020-11-29T11:50:35.567Z">
-<meta property="article:modified_time" content="2020-11-29T12:43:37.618Z">
-<meta property="article:author" content="赖新明">
+<meta property="article:modified_time" content="2020-11-29T12:52:41.514Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="技术博客">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140033.png">
   
-    <link rel="alternative" href="/atom.xml" title="赖新明的个人博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="symon&#39;s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -94,11 +95,13 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/photo.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">Symon</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">悟已往之不谏，知来者之可追。实迷途其未远，觉今是而昨非。</p>
 		
 
 		<nav class="header-menu">
@@ -128,13 +131,13 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/ilusymon/" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="qq" target="_blank" href="/assets/QQ.png" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="weixin" target="_blank" href="/assets/weixin.png" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:rsymon.v@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -152,11 +155,13 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/photo.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">Symon</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>悟已往之不谏，知来者之可追。实迷途其未远，觉今是而昨非。<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -169,13 +174,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/ilusymon/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="qq" target="_blank" href="/assets/QQ.png" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="weixin" target="_blank" href="/assets/weixin.png" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:rsymon.v@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -223,6 +228,8 @@
       
         <h1 id="分布式RPC框架Apache-Dubbo"><a href="#分布式RPC框架Apache-Dubbo" class="headerlink" title="分布式RPC框架Apache Dubbo"></a><a href="#%E5%88%86%E5%B8%83%E5%BC%8Frpc%E6%A1%86%E6%9E%B6apache-dubbo">分布式RPC框架Apache Dubbo</a></h1><h2 id="1-软件架构的演进过程"><a href="#1-软件架构的演进过程" class="headerlink" title="1. 软件架构的演进过程"></a>1. 软件架构的演进过程</h2><p>软件架构的发展经历了由单体架构、垂直架构、SOA架构到微服务架构的演进过程，下面我们分别了解一下这几个架构。</p>
 <h3 id="1-1-单体架构"><a href="#1-1-单体架构" class="headerlink" title="1.1 单体架构"></a>1.1 单体架构</h3><p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140033.png" alt="download"></p>
+<a id="more"></a>
+
 <p>一个归档包（例如war格式或者Jar格式）包含了应用所有功能的应用程序，我们通常称之为单体应用。架构单体应用的方法论，我们称之为单体应用架构，这是一种比较传统的架构风格。。</p>
 <p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201119140148.png" alt="download (1)"></p>
 <p>架构说明：</p>
@@ -560,6 +567,16 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wxpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -682,7 +699,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 赖新明
+    		&copy; 2020 John Doe
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
