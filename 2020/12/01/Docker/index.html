@@ -6,16 +6,88 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | symon&#39;s blog</title>
+  <title>Docker | symon&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="symon&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="掌握Docker基础知识，能够理解Docker镜像与容器的概念  完成Docker安装与启动  掌握Docker镜像与容器相关命令  掌握Tomcat Nginx 等软件的常用应用的安装  掌握docker迁移与备份相关命令  能够运用Dockerfile编写创建容器的脚本  能够搭建与使用docker私有仓库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="http://example.com/2020/12/01/Docker/index.html">
 <meta property="og:site_name" content="symon&#39;s blog">
+<meta property="og:description" content="掌握Docker基础知识，能够理解Docker镜像与容器的概念  完成Docker安装与启动  掌握Docker镜像与容器相关命令  掌握Tomcat Nginx 等软件的常用应用的安装  掌握docker迁移与备份相关命令  能够运用Dockerfile编写创建容器的脚本  能够搭建与使用docker私有仓库">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114035.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114137.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114238.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114334.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114448.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114515.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114547.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114633.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203539.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203537.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203533.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203530.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203528.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203525.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201204351.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201204602.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205625.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205813.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205841.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210057.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210221.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210513.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210530.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210718.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210850.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211002.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211032.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211752.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211919.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211956.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212055.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212143.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212224.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212414.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212517.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212552.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212740.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212823.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201223459.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201223718.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225441.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225640.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201224934.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225050.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225926.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230015.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230032.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230343.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230524.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230609.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230648.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230953.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231344.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231534.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231639.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231807.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201232150.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233226.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233315.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201232508.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233425.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233543.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233608.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233629.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233734.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233751.png">
+<meta property="og:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201234030.png">
+<meta property="article:published_time" content="2020-12-01T03:27:54.000Z">
+<meta property="article:modified_time" content="2020-12-01T15:40:54.277Z">
 <meta property="article:author" content="Symon">
-<meta property="article:tag" content="技术博客">
+<meta property="article:tag" content="容器">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114035.png">
   
     <link rel="alternative" href="/atom.xml" title="symon&#39;s blog" type="application/atom+xml">
   
@@ -155,63 +227,404 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Docker" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/02/git/" class="archive-article-date">
-  	<time datetime="2020-12-02T00:42:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/02/git/">git</a>
+    <h1 class="article-title" itemprop="name">
+      Docker
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/01/Docker/" class="archive-article-date">
+        
+        <a href="/2020/12/01/Docker/" class="archive-article-date">
   	<time datetime="2020-12-01T03:27:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/01/Docker/">Docker</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>掌握Docker基础知识，能够理解Docker镜像与容器的概念</p>
+</li>
+<li><p>完成Docker安装与启动</p>
+</li>
+<li><p>掌握Docker镜像与容器相关命令</p>
+</li>
+<li><p>掌握Tomcat Nginx 等软件的常用应用的安装</p>
+</li>
+<li><p>掌握docker迁移与备份相关命令</p>
+</li>
+<li><p>能够运用Dockerfile编写创建容器的脚本</p>
+</li>
+<li><p>能够搭建与使用docker私有仓库</p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+
+
+</li>
+</ul>
+<h1 id="1-Docker简介"><a href="#1-Docker简介" class="headerlink" title="1 Docker简介"></a>1 Docker简介</h1><h2 id="1-1-什么是虚拟化"><a href="#1-1-什么是虚拟化" class="headerlink" title="1.1 什么是虚拟化"></a>1.1 什么是虚拟化</h2><p>虚拟化，是指通过虚拟化技术将一台计算机虚拟为多台逻辑计算机。在一台计算机上同时运行多个逻辑计算机，每个逻辑计算机可运行不同的操作系统，并且<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/5985445">应用程序</a>都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。</p>
+<p> 虚拟化技术种类很多，例如：软件虚拟化、硬件虚拟化、内存虚拟化、网络虚拟化(vip)、桌面虚拟化、服务虚拟化、虚拟机等等。</p>
+<h2 id="1-2-问题：为什么会有docker出现？"><a href="#1-2-问题：为什么会有docker出现？" class="headerlink" title="1.2 问题：为什么会有docker出现？"></a>1.2 问题：为什么会有docker出现？</h2><p>一款产品从开发到上线，从操作系统，到运行环境，再到应用配置。作为开发+运维之间的协作我们需要关心很多东西，这也是很多互联网公司都不得不面对的问题，特别是各种版本的迭代之后，不同版本环境的兼容，对运维人员都是考验 , 这个时候 Docker 横空出世，是因为它对此给出了一个标准化的解决方案。<br>        环境配置如此麻烦，换一台机器，就要重来一次，费力费时。很多人想到，能不能从根本上解决问题，软件可以带环境安装？也就是说，安装的时候，把原始环境一模一样地复制过来。开发人员利用 Docker 可以消除协作编码时“在我的机器上可正常工作”的问题。</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114035.png" alt="download"></p>
+<p>之前，可以发现，每发布一个程序，都要走一遍以上的流程：</p>
+<h2 id="1-2-什么是Docker"><a href="#1-2-什么是Docker" class="headerlink" title="1.2 什么是Docker"></a>1.2 什么是Docker</h2><p> Docker 是一个开源的应用容器引擎，基于 Go 语言开发。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p>
+<p>Docker的主要目标是“Build，Ship and Run Any App,Anywhere”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到“一次封装，到处运行”。</p>
+<p><strong>总之一句话：只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作 。</strong></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114137.png" alt="download (1)"></p>
+<p>为什么选择Docker?</p>
+<ul>
+<li>Docker的镜像提供了除内核外完整的运行时环境，确保了应用运行环境一致性，从而不会再出现“这段代码在我机器上没问题啊”这类问题；——一致的运行环境</li>
+<li>可以做到秒级、甚至毫秒级的启动时间。大大的节约了开发、测试、部署的时间。——更快速的启动时间</li>
+<li>避免公用的服务器，资源会容易受到其他用户的影响。——隔离性</li>
+<li>善于处理集中爆发的服务器使用压力；——弹性伸缩，快速扩展</li>
+<li>可以很轻易的将在一个平台上运行的应用，迁移到另一个平台上，而不用担心运行环境的变化导致应用无法正常运行的情况。——迁移方便</li>
+<li>使用Docker可以通过定制应用镜像来实现持续集成、持续交付、部署。——持续交付和部署</li>
+</ul>
+<p>Docker应用场景</p>
+<p>① Web 应用的自动化打包和发布<br>② 自动化测试和持续集成、发布<br>③ 在服务型环境中部署和调整数据库或其他的后台应用</p>
+<p>使用Docker可以实现开发人员的开发环境、测试人员的测试环境、运维人员的生产环境的一致性。</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114238.png" alt="download (2)"></p>
+<p>Docker借鉴了标准集装箱的概念。标准集装箱将货物运往世界各地，Docker将这个模型运用到自己的设计<br>中，唯一不同的是：集装箱运输货物，而Docker运输软件。</p>
+<h2 id="1-3-容器与虚拟机比较"><a href="#1-3-容器与虚拟机比较" class="headerlink" title="1.3 容器与虚拟机比较"></a>1.3 容器与虚拟机比较</h2><p> 下面的图片比较了 Docker 和传统虚拟化方式的不同之处，可见容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统方式则是在硬件层面实现。</p>
+<p>传统虚拟机<img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114334.png" alt="download (3)"></p>
+<p>传统虚拟机技术基于安装在主操作系统上的虚拟机管理系统（如：VirtualBox和VMWare等），创建虚拟机（虚拟出各种硬件），在虚拟机上安装从操作系统，在从操作系统中安装部署各种应用。</p>
+<p>Docker</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114448.png" alt="download (4)"></p>
+<p>Docker容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统虚拟机则是在硬件层面实现虚拟化。与传统的虚拟机相比，Docker优势体现为启动速度快、占用体积小。</p>
+<p>使用上的区别<img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114515.png" alt="download (5)"></p>
+<p>简单来说： 容器和虚拟机具有相似的资源隔离和分配优势，但功能有所不同，因为容器虚拟化的是操作系统，而不是硬件，因此容器更容易移植，效率也更高。</p>
+<h2 id="1-4-Docker-组件"><a href="#1-4-Docker-组件" class="headerlink" title="1.4 Docker 组件"></a>1.4 Docker 组件</h2><h3 id="1-4-1-Docker组成部分"><a href="#1-4-1-Docker组成部分" class="headerlink" title="1.4.1 Docker组成部分"></a>1.4.1 Docker组成部分</h3><p> Docker是一个客户端-服务器（C/S）架构程序。Docker客户端只需要向Docker服务器或者守护进程发出请求，服务器或者守护进程将完成所有工作并返回结果。Docker提供了一个命令行工具Docker以及一整套RESTful API。你可以在同一台宿主机上运行Docker守护进程和客户端，也可以从本地的Docker客户端连接到运行在另一台宿主机上的远程Docker守护进程。</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114547.png" alt="download (6)"></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201114633.png" alt="download (7)"></p>
+<h3 id="1-4-2-Docker镜像与容器"><a href="#1-4-2-Docker镜像与容器" class="headerlink" title="1.4.2 Docker镜像与容器"></a>1.4.2 Docker镜像与容器</h3><p>镜像：类似虚拟机镜像 , 是一个特殊的文件系统</p>
+<p>操作系统分为内核和用户空间。对于Linux而言，内核启动后，会挂载root文件系统为其提供用户空间支持。而Docker镜像（Image），就相当于是一个root文件系统。</p>
+<p>Docker镜像是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。 镜像不包含任何动态数据，其内容在构建之后也不会被改变。</p>
+<p>容器：类似linux系统环境，运行和隔离应用。是镜像运行时的实体</p>
+<p>镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等 。</p>
+<p>仓库：集中存放镜像文件的地方。</p>
+<p>镜像构建完成后，可以很容易的在当前宿主上运行，但是， 如果需要在其它服务器上使用这个镜像，我们就需要一个集中存储、分发镜像的地方，比如后面我们要学的，Docker Registry就是这样的服务。</p>
+<h3 id="1-4-3-Registry（注册中心）"><a href="#1-4-3-Registry（注册中心）" class="headerlink" title="1.4.3 Registry（注册中心）"></a>1.4.3 Registry（注册中心）</h3><p> Docker用Registry来保存用户构建的镜像。Registry分为公共和私有两种。Docker公司运营公共的Registry叫做Docker Hub。用户可以在Docker Hub注册账号，分享并保存自己的镜像（说明：在Docker Hub下载镜像巨慢，可以自己构建私有的Registry）。</p>
+<p> <a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
+<h1 id="2-Docker安装与启动"><a href="#2-Docker安装与启动" class="headerlink" title="2 Docker安装与启动"></a>2 Docker安装与启动</h1><h2 id="2-1-安装Docker"><a href="#2-1-安装Docker" class="headerlink" title="2.1 安装Docker"></a>2.1 安装Docker</h2><p> Docker官方建议在Ubuntu中安装，因为Docker是基于Ubuntu发布的，而且一般Docker出现的问题Ubuntu是最先更新或者打补丁的。在很多版本的CentOS中是不支持更新最新的一些补丁包的。</p>
+<p>由于我们学习的环境都使用的是CentOS，因此这里我们将Docker安装到CentOS上。注意：这里建议安装在CentOS7.x以上的版本，在CentOS6.x的版本中，安装前需要安装其他很多的环境而且Docker很多补丁不支持更新。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203539.png" alt="image-20201201201630729"></p>
+<p>（1）yum 包更新到最新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum update</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203537.png" alt="image-20201201201939671"></p>
+<p>（2）安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# sudo yum install -y yum-utils device-mapper-persistent-data lvm2</span><br><span class="line">上次元数据过期检查：0:09:56 前，执行于 2020年12月01日 星期二 20时10分54秒。</span><br><span class="line">软件包 device-mapper-persistent-data-0.8.5-3.el8.x86_64 已安装。</span><br><span class="line">软件包 lvm2-8:2.03.08-3.el8.x86_64 已安装。</span><br><span class="line">依赖关系解决。</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line"> 软件包               架构              版本                         仓库               大小</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">安装:</span><br><span class="line"> yum-utils            noarch            4.0.12-4.el8_2               BaseOS             66 k</span><br><span class="line"></span><br><span class="line">事务概要</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">安装  1 软件包</span><br><span class="line"></span><br><span class="line">总下载：66 k</span><br><span class="line">安装大小：20 k</span><br><span class="line">下载软件包：</span><br><span class="line">yum-utils-4.0.12-4.el8_2.noarch.rpm                          119 kB&#x2F;s |  66 kB     00:00    </span><br><span class="line">---------------------------------------------------------------------------------------------</span><br><span class="line">总计                                                          63 kB&#x2F;s |  66 kB     00:01     </span><br><span class="line">警告：&#x2F;var&#x2F;cache&#x2F;dnf&#x2F;BaseOS-929b586ef1f72f69&#x2F;packages&#x2F;yum-utils-4.0.12-4.el8_2.noarch.rpm: 头V3 RSA&#x2F;SHA256 Signature, 密钥 ID 8483c65d: NOKEY</span><br><span class="line">CentOS-8 - Base                                              1.6 MB&#x2F;s | 1.6 kB     00:00    </span><br><span class="line">导入 GPG 公钥 0x8483C65D:</span><br><span class="line"> Userid: &quot;CentOS (CentOS Official Signing Key) &lt;security@centos.org&gt;&quot;</span><br><span class="line"> 指纹: 99DB 70FA E1D7 CE22 7FB6 4882 05B5 55B3 8483 C65D</span><br><span class="line"> 来自: &#x2F;etc&#x2F;pki&#x2F;rpm-gpg&#x2F;RPM-GPG-KEY-centosofficial</span><br><span class="line">导入公钥成功</span><br><span class="line">运行事务检查</span><br><span class="line">事务检查成功。</span><br><span class="line">运行事务测试</span><br><span class="line">事务测试成功。</span><br><span class="line">运行事务</span><br><span class="line">  准备中  :                                                                              1&#x2F;1 </span><br><span class="line">  安装    : yum-utils-4.0.12-4.el8_2.noarch                                              1&#x2F;1 </span><br><span class="line">  运行脚本: yum-utils-4.0.12-4.el8_2.noarch                                              1&#x2F;1 </span><br><span class="line">  验证    : yum-utils-4.0.12-4.el8_2.noarch                                              1&#x2F;1 </span><br><span class="line">Installed products updated.</span><br><span class="line"></span><br><span class="line">已安装:</span><br><span class="line">  yum-utils-4.0.12-4.el8_2.noarch                                                            </span><br><span class="line"></span><br><span class="line">完毕！</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>（3）设置yum源为阿里云</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum-config-manager --add-repo http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;docker-ce&#x2F;linux&#x2F;centos&#x2F;docker-ce.repo</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203533.png" alt="image-20201201202212687"></p>
+<p>（4）安装docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install docker-ce</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203530.png" alt="image-20201201202351176"></p>
+<p>centos8默认使用podman代替docker，所以需要containerd.io</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install https:&#x2F;&#x2F;download.docker.com&#x2F;linux&#x2F;fedora&#x2F;30&#x2F;x86_64&#x2F;stable&#x2F;Packages&#x2F;containerd.io-1.2.6-3.3.fc30.x86_64.rpm</span><br></pre></td></tr></table></figure>
+
+<p>继续安装Docker</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203528.png" alt="image-20201201202537445"></p>
+<p>（5）安装后查看docker版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker -v</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201203525.png" alt="image-20201201202700081"></p>
+<h2 id="2-2-设置ustc的镜像"><a href="#2-2-设置ustc的镜像" class="headerlink" title="2.2 设置ustc的镜像"></a>2.2 设置ustc的镜像</h2><p>ustc是老牌的linux镜像服务提供者了，还在遥远的ubuntu 5.04版本的时候就在用。ustc的docker镜像加速器速度很快。ustc docker mirror的优势之一就是不需要注册，是真正的公共服务。</p>
+<p><a target="_blank" rel="noopener" href="https://lug.ustc.edu.cn/wiki/mirrors/help/docker">https://lug.ustc.edu.cn/wiki/mirrors/help/docker</a></p>
+<p>编辑该文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;docker&#x2F;daemon.json</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">报错&quot;&#x2F;etc&#x2F;docker&#x2F;daemon.json&quot; E212: Can&#39;t open file for writing</span><br></pre></td></tr></table></figure>
+
+<p>原因：centos8需要先启动docker服务，此时系统自动产生/etc/docker目录，此时才能生成daemon.json文件并进行编辑</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<p>在该文件中输入如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;: [&quot;https:&#x2F;&#x2F;docker.mirrors.ustc.edu.cn&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201204351.png" alt="image-20201201204351529"></p>
+<h2 id="2-3-Docker的启动与停止"><a href="#2-3-Docker的启动与停止" class="headerlink" title="2.3 Docker的启动与停止"></a>2.3 Docker的启动与停止</h2><p><strong>systemctl</strong>命令是系统服务管理器指令</p>
+<p>启动docker：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<p>查看docker状态：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status docker</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201204602.png" alt="image-20201201204602906"></p>
+<p>q 退出</p>
+<p>停止docker：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205625.png" alt="image-20201201205625248"></p>
+<p>重启docker：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure>
+
+<p>开机启动：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker</span><br></pre></td></tr></table></figure>
+
+<p>查看docker概要信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker info</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker info</span><br><span class="line">Client:</span><br><span class="line"> Debug Mode: false</span><br><span class="line"></span><br><span class="line">Server:</span><br><span class="line"> Containers: 0</span><br><span class="line">  Running: 0</span><br><span class="line">  Paused: 0</span><br><span class="line">  Stopped: 0</span><br><span class="line"> Images: 0</span><br><span class="line"> Server Version: 19.03.13</span><br><span class="line"> Storage Driver: overlay2</span><br><span class="line">  Backing Filesystem: extfs</span><br><span class="line">  Supports d_type: true</span><br><span class="line">  Native Overlay Diff: true</span><br><span class="line"> Logging Driver: json-file</span><br><span class="line"> Cgroup Driver: cgroupfs</span><br><span class="line"> Plugins:</span><br><span class="line">  Volume: local</span><br><span class="line">  Network: bridge host ipvlan macvlan null overlay</span><br><span class="line">  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog</span><br><span class="line"> Swarm: inactive</span><br><span class="line"> Runtimes: runc</span><br><span class="line"> Default Runtime: runc</span><br><span class="line"> Init Binary: docker-init</span><br><span class="line"> containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb</span><br><span class="line"> runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f</span><br><span class="line"> init version: fec3683</span><br><span class="line"> Security Options:</span><br><span class="line">  seccomp</span><br><span class="line">   Profile: default</span><br><span class="line"> Kernel Version: 4.18.0-193.28.1.el8_2.x86_64</span><br><span class="line"> Operating System: CentOS Linux 8 (Core)</span><br><span class="line"> OSType: linux</span><br><span class="line"> Architecture: x86_64</span><br><span class="line"> CPUs: 4</span><br><span class="line"> Total Memory: 3.664GiB</span><br><span class="line"> Name: localhost.localdomain</span><br><span class="line"> ID: G3LC:FVAP:SHRP:DER4:7ALK:T3X6:UEBP:AKRF:DQN4:CSW6:EDFG:SUVX</span><br><span class="line"> Docker Root Dir: &#x2F;var&#x2F;lib&#x2F;docker</span><br><span class="line"> Debug Mode: false</span><br><span class="line"> Registry: https:&#x2F;&#x2F;index.docker.io&#x2F;v1&#x2F;</span><br><span class="line"> Labels:</span><br><span class="line"> Experimental: false</span><br><span class="line"> Insecure Registries:</span><br><span class="line">  127.0.0.0&#x2F;8</span><br><span class="line"> Registry Mirrors:</span><br><span class="line">  https:&#x2F;&#x2F;docker.mirrors.ustc.edu.cn&#x2F;</span><br><span class="line"> Live Restore Enabled: false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>查看docker帮助文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker --help</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205813.png" alt="image-20201201205813517"></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201205841.png" alt="download"></p>
+<p>指令介绍：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cp:本地文件系统(OS操作系统|宿主机)和容器之间进行文件或者文件夹拷贝</span><br><span class="line">exec:登录一个容器，使用命令行操作正在运行的容器。</span><br><span class="line">images:镜像的集合查询。</span><br><span class="line">ps:容器列表</span><br><span class="line">pull:下载镜像</span><br><span class="line">restart:重启一个或多个容器</span><br><span class="line">rm:删除一个或多个容器</span><br><span class="line">rmi:删除一个或多个镜像</span><br><span class="line">run:创建一个容器，并运行起来</span><br><span class="line">save:导出镜像到一个文件(tar)中</span><br><span class="line">search:搜索镜像（从Docker Hub）</span><br><span class="line">start：启动一个或多个已经停止的容器</span><br><span class="line">restart:重启动一个或多个已经停止的容器</span><br><span class="line">stop：停止一个或多个正在运行的容器</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3 常用命令"></a>3 常用命令</h1><h2 id="3-1镜像相关命令"><a href="#3-1镜像相关命令" class="headerlink" title="3.1镜像相关命令"></a>3.1镜像相关命令</h2><h3 id="3-1-1-查看镜像"><a href="#3-1-1-查看镜像" class="headerlink" title="3.1.1 查看镜像"></a>3.1.1 查看镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看镜像可以使用如下命令：</span><br><span class="line">docker images</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210057.png" alt="image-20201201210057729"></p>
+<p><code>REPOSITORY</code>：镜像名称</p>
+<p><code>TAG</code>：镜像标签</p>
+<p><code>IMAGE ID</code>：镜像ID</p>
+<p><code>CREATED</code>：镜像的创建日期（不是获取该镜像的日期）</p>
+<p><code>SIZE</code>：镜像大小</p>
+<p>这些镜像都是存储在Docker的 <code>/var/lib/docker</code> 目录下</p>
+<h3 id="3-1-2-搜索镜像"><a href="#3-1-2-搜索镜像" class="headerlink" title="3.1.2 搜索镜像"></a>3.1.2 搜索镜像</h3><p>如果你需要从网络中查找需要的镜像，可以通过以下命令搜索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 如果你需要从网络中查找需要的镜像，可以通过以下命令搜索</span><br><span class="line">docker search 镜像名称</span><br><span class="line"># 比如 docker search nginx</span><br></pre></td></tr></table></figure>
+
+<p>例如 搜索一个 <code>nginx</code> 镜像</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210221.png" alt="image-20201201210221276"></p>
+<p><code>NAME</code>：仓库名称</p>
+<p><code>DESCRIPTION</code>：镜像描述</p>
+<p><code>STARS</code>：用户评价，反应一个镜像的受欢迎程度</p>
+<p><code>OFFICIAL</code>：是否官方</p>
+<p><code>AUTOMATED</code>：自动构建，表示该镜像由Docker Hub自动构建流程创建的</p>
+<h3 id="3-1-3-拉取镜像"><a href="#3-1-3-拉取镜像" class="headerlink" title="3.1.3 拉取镜像"></a>3.1.3 拉取镜像</h3><p>拉取镜像就是从中央仓库中下载镜像到本地</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 拉取镜像就是从Docker仓库下载镜像到本地，镜像名称格式为 名称:版本号，如果版本号不指定则是最新的版本 </span><br><span class="line">命令如下：</span><br><span class="line">docker pull 镜像名称</span><br><span class="line"># 例如，我要下载centos7镜像</span><br><span class="line">docker pull centos:7</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210513.png" alt="image-20201201210513185"></p>
+<p>刚刚下载的镜像通过 <code>docker images</code> 就可以查看</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210530.png" alt="image-20201201210530570"></p>
+<h3 id="3-1-4-删除镜像"><a href="#3-1-4-删除镜像" class="headerlink" title="3.1.4 删除镜像"></a>3.1.4 删除镜像</h3><p>按镜像ID删除镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 可以按照镜像id删除镜像，命令如下：</span><br><span class="line">docker rmi 镜像ID</span><br></pre></td></tr></table></figure>
+
+<p>删除 <code>nginx</code> 镜像</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210718.png" alt="image-20201201210718106"></p>
+<p>删除所有镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi &#96;docker images -q&#96;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-15-从Docker-Hub拉取"><a href="#3-15-从Docker-Hub拉取" class="headerlink" title="3.15 从Docker Hub拉取"></a>3.15 从Docker Hub拉取</h3><p>Docker镜像首页，包括官方镜像和其它公开镜像。Docker Hub上最受欢迎的10大镜像（通过Docker registry API获取不了镜像被pull的个数，只能通过镜像的stars数量，来衡量镜像的流行度。毫无疑问，拥有最高stars数量的库都是官方库）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;hub.docker.com&#x2F;search?image_filter&#x3D;official&amp;type&#x3D;image</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201210850.png" alt="image-20201201210849913"></p>
+<p>国情的原因，国内下载 Docker HUB 官方的相关镜像比较慢，可以使用国内（docker.io）的一些镜像加速器，镜像保持和官方一致，关键是速度块，推荐使用。</p>
+<h2 id="3-2-容器相关命令"><a href="#3-2-容器相关命令" class="headerlink" title="3.2 容器相关命令"></a>3.2 容器相关命令</h2><p>容器，也是docker中的核心概念，镜像是创建容器的软件 , 容器是由镜像运行产生的运行实例。镜像和容器的关系，就如同Java语言中类和对象的关系。</p>
+<p>如果需要通俗的描述容器的话，我觉得容器就是一个存放东西的地方，就像书包可以装各种文具、衣柜可以放各种衣服、鞋架可以放各种鞋子一样。我们现在所说的容器存放的东西可能更偏向于应用比如网站、程序甚至是系统环境。</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211002.png" alt="download"></p>
+<h3 id="3-2-1-查看容器"><a href="#3-2-1-查看容器" class="headerlink" title="3.2.1 查看容器"></a>3.2.1 查看容器</h3><p>查看正在运行的容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211032.png" alt="image-20201201211032724"></p>
+<p>查看最后一次运行的容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps –l</span><br></pre></td></tr></table></figure>
+
+<p>l：last</p>
+<p>查看停止的容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -f status&#x3D;exited</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-2-创建与启动容器"><a href="#3-2-2-创建与启动容器" class="headerlink" title="3.2.2 创建与启动容器"></a>3.2.2 创建与启动容器</h3><p>① 什么是宿主机？</p>
+<p>就是主机，这个概念是相对于子机而言的，比如你安装有虚拟机的话，那么相对于虚拟机而言，你正在使用的计算机就是宿主机，虚拟机是安装在主机上的，必须在主机上才能运行，主机就是一个“宿主”。</p>
+<p>② 创建容器常用的参数说明：</p>
+<p><strong>创建容器命令：docker run</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">-i：表示运行容器</span><br><span class="line"></span><br><span class="line">-t：表示容器启动后会进入其命令行。加入这两个参数后，容器创建就能登录进去。即分配一个伪终端。</span><br><span class="line"></span><br><span class="line">--name :为创建的容器命名。</span><br><span class="line"></span><br><span class="line">-v：表示目录映射关系（前者是宿主机目录，后者是映射到宿主机上的目录），可以使用多个－v做多个目录或文件映射。注意：最好做目录映射，在宿主机上做修改，然后共享到容器上。</span><br><span class="line"></span><br><span class="line">-d：在run后面加上-d参数,则会创建一个守护式容器在后台运行（这样创建容器后不会自动登录容器，如果只加-i -t两个参数，创建后就会自动进去容器）。</span><br><span class="line"></span><br><span class="line">-p：表示端口映射，前者是宿主机端口，后者是容器内的映射端口。可以使用多个-p做多个端口映射</span><br></pre></td></tr></table></figure>
+
+<p>（1）交互式方式创建容器</p>
+<p>以交互式方式创建并启动容器，启动完成后，直接进入当前容器。使用exit命令退出容器。需要注意的是以此种方式启动容器，如果退出容器，则容器会进入停止状态。可以理解成交互式容器 是前台容器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --name&#x3D;容器名称 镜像名称:标签 &#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line"># 比如：docker run -it --name&#x3D;mycentos centos:7 &#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line"># docker run:表示创建容器</span><br><span class="line"></span><br><span class="line"># -it：表示运行容器并进入它的命令行</span><br><span class="line"></span><br><span class="line"># --name&#x3D;mycentos：给当前的容器命名</span><br><span class="line"></span><br><span class="line"># centos:7：使用该镜像创建</span><br><span class="line"></span><br><span class="line"># &#x2F;bin&#x2F;bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure>
+
+<p>准备镜像</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211752.png" alt="image-20201201211751985"></p>
+<p>创建容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --name&#x3D;mycentos centos:latest</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211919.png" alt="image-20201201211919842"></p>
+<p>创建好容器，并且已经进入到容器内部了，可以直接观察前面中括号里面的内容发现，跟创建容器之前不一样了，</p>
+<p>并且 通过 dir 命令，会发现，其实容器内部也是一个 <code>centos</code> , 我们可以把每个容器都看成一个小电脑或者服务器</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201211956.png" alt="image-20201201211956083"></p>
+<p>重新开一个新的会话，查看刚刚创建的容器是否已经有了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看正在运行的容器</span><br><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212055.png" alt="image-20201201212055091"></p>
+<p>退出当前容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212143.png" alt="image-20201201212142953"></p>
+<p>退出之后，容器也退出了，没有删除</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212224.png" alt="image-20201201212224526"></p>
+<p><strong>（3）守护式方式创建容器：</strong></p>
+<p>创建一个守护式容器；如果对于一个需要长期运行的容器来说，我们可以创建一个守护式容器。命令如下（容器名称不能重复）：守护容器可以理解成在后台运行的容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 守护式容器和交互式容器的创建方式区别：</span><br><span class="line"># ① -it 换成 -di</span><br><span class="line"># ② 去掉后面的 &#x2F;bin&#x2F;bash</span><br><span class="line">docker run -di --name&#x3D;容器名称 镜像名称:标签</span><br><span class="line"># 比如：docker run -di --name&#x3D;mycentos10 centos:latest</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212414.png" alt="image-20201201212413988"></p>
+<p><strong>进入守护式容器方式：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器名称 (或者容器ID)  &#x2F;bin&#x2F;bash</span><br><span class="line"># 比如  docker exec -it mycentos10 &#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212517.png" alt="image-20201201212517395"></p>
+<p>已经进入到容器内部了，如果现在退出，然后查看容器是否还在后台运行</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212552.png" alt="image-20201201212552182"></p>
+<p>守护容器不会主动退出</p>
+<h3 id="3-2-3-停止与启动容器"><a href="#3-2-3-停止与启动容器" class="headerlink" title="3.2.3 停止与启动容器"></a>3.2.3 停止与启动容器</h3><p>停止容器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker stop 容器名称（或者容器ID）</span><br><span class="line">例如： docker stop mycentos10</span><br></pre></td></tr></table></figure>
+
+<p>查看容器是否已经停止</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212740.png" alt="image-20201201212740675"></p>
+<p>启动容器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker start 容器名称（或者容器ID）</span><br><span class="line">例如： docker start mycentos10</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201212823.png" alt="image-20201201212823170"></p>
+<h3 id="3-2-4-文件拷贝"><a href="#3-2-4-文件拷贝" class="headerlink" title="3.2.4 文件拷贝"></a>3.2.4 文件拷贝</h3><p>我们需要在容器内安装一个软件，软件首先需要有安装包，我们就需要把安装包拷贝到容器内。我们通常的操作是先把文件上传到宿主机，然后我们在将文件从宿主机拷贝到容器内的某个目录下面进行安装。</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201223459.png" alt="image-20201201223414163"></p>
+<p>如果我们需要将文件拷贝到容器内可以使用cp命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker cp 需要拷贝的文件或目录 容器名称:容器目录</span><br><span class="line">例如： docker cp anaconda-ks.cfg mycentos10:&#x2F;usr&#x2F;local&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>拷贝一个文件到 <code>mycentos10 </code>的/urs/local/<code> 文件下面 ，拷贝完成之后，删除文件，然后在</code>mycentos10`拷贝过来</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201223718.png" alt="image-20201201223718498"></p>
+<p>登录容器查看拷贝之后的结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it mycentos10 &#x2F;bin&#x2F;bash</span><br><span class="line">docker exec：表示登陆正在运行的容器</span><br><span class="line">-it：进入命令行</span><br><span class="line">mycentos10：进入到该容器</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225441.png" alt="image-20201201225441825"></p>
+<p>也可以将文件从容器内拷贝出来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker cp 容器名称:容器目录 需要拷贝的文件或目录</span><br><span class="line">例如：docker cp mycentos10:&#x2F;usr&#x2F;local&#x2F;anaconda-ks.cfg ~</span><br></pre></td></tr></table></figure>
+
+<p>我们先通过 <code>exit</code> 退出容器，然后在把文件从容器拷贝到当前目录</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225640.png" alt="image-20201201225640418"></p>
+<h3 id="3-2-5-目录挂载"><a href="#3-2-5-目录挂载" class="headerlink" title="3.2.5 目录挂载"></a>3.2.5 目录挂载</h3><p>我们可以在创建容器的时候，将宿主机的目录与容器内的目录进行映射，这样我们就可以通过修改宿主机某个目录的文件从而去影响容器。</p>
+<p>创建容器 添加-v参数 后边为 宿主机目录:容器目录，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 创建并启动容器mycentos3,并挂载linux中的&#x2F;usr&#x2F;local&#x2F;myhtml目录到容器的&#x2F;usr&#x2F;local&#x2F;myhtml；也就是在linux中的&#x2F;usr&#x2F;local&#x2F;myhtml中操作相当于对容器相应目录操作</span><br><span class="line">docker run -di --name&#x3D;容器的名字 -v &#x2F;usr&#x2F;local&#x2F;myhtml:&#x2F;usr&#x2F;local&#x2F;myhtml --name&#x3D;mycentos3 centos:7</span><br><span class="line"></span><br><span class="line">比如：docker run -di --name&#x3D;mycentos3 -v &#x2F;usr&#x2F;local&#x2F;myhtml:&#x2F;usr&#x2F;local&#x2F;myhtml centos:latest</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201224934.png" alt="image-20201201224933985"></p>
+<p>通过 <code>docker ps</code> 查看刚刚创建的容器是否已经创建</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225050.png" alt="image-20201201225050394"></p>
+<p>进入到 myhtml 目录 ，通过dir查看是否有文件，通过vi test2 ，创建一个文件，进入test2文件，随便输入一些数据</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201225926.png" alt="image-20201201225926178"></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230015.png" alt="image-20201201230015688"></p>
+<p>进入目录随便输入一些东西 ， 退出保存</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230032.png" alt="image-20201201230032545"></p>
+<p>登录容器，查看刚刚输入的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 进入容器</span><br><span class="line">docker exec -it mycentos3 &#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line"># 进入容器中查看目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;myhtml</span><br><span class="line"></span><br><span class="line"># 查看myhtml目录中，是否有对应文件test</span><br><span class="line">ls</span><br><span class="line">cat test</span><br><span class="line"></span><br><span class="line"># 退出容器</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230343.png" alt="image-20201201230343697"></p>
+<p>如果你共享的是多级的目录，可能会出现权限不足的提示。</p>
+<p>这是因为CentOS中的安全模块selinux把权限禁掉了，我们需要添加参数 –privileged=true 来解决挂载的目录没有权限的问题</p>
+<h3 id="3-2-6-查看容器IP地址"><a href="#3-2-6-查看容器IP地址" class="headerlink" title="3.2.6 查看容器IP地址"></a>3.2.6 查看容器IP地址</h3><p>我们可以通过以下命令查看容器运行的各种数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker inspect 容器名称（容器ID） </span><br><span class="line"></span><br><span class="line"># 在linux宿主机下查看 mycentos3 的ip</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230524.png" alt="image-20201201230524172"></p>
+<p>IP 地址</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230609.png" alt="image-20201201230609756"></p>
+<p>通过inspect 可以查看的信息太多，如果想单纯有针对性的查看某个信息，也可以直接执行下面的命令直接输出IP地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker inspect --format&#x3D;&#39;&#123;&#123;.NetworkSettings.IPAddress&#125;&#125;&#39; 容器名称（容器ID）</span><br><span class="line"># 例如：docker inspect --format&#x3D;&#39;&#123;&#123;.NetworkSettings.IPAddress&#125;&#125;&#39; mycentos3</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230648.png" alt="image-20201201230647953"></p>
+<h3 id="3-2-7-删除容器"><a href="#3-2-7-删除容器" class="headerlink" title="3.2.7 删除容器"></a>3.2.7 删除容器</h3><p>删除指定的容器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker rm 容器名称（容器ID）</span><br><span class="line">例如：docker rm mycentos11</span><br></pre></td></tr></table></figure>
+
+<p>删除容器的时候，如果容器在运行，会报错，必须先停止容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 查看正在运行的容器</span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"># 停止容器</span><br><span class="line">docker stop mycentos10</span><br><span class="line"></span><br><span class="line"># 删除容器</span><br><span class="line">docker rm mycentos10</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201230953.png" alt="image-20201201230953001"></p>
+<h1 id="4-应用部署"><a href="#4-应用部署" class="headerlink" title="4 应用部署"></a>4 应用部署</h1><h2 id="4-1-MySQL部署"><a href="#4-1-MySQL部署" class="headerlink" title="4.1 MySQL部署"></a>4.1 MySQL部署</h2><p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231344.png" alt="download"></p>
+<p>（1）拉取mysql镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull centos&#x2F;mysql-57-centos7</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231534.png" alt="image-20201201231534920"></p>
+<p>（2）创建容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 创建mysql5.7容器</span><br><span class="line"># docker run -di --name&#x3D;容器名字 -p 宿主机端口:容器端口 -e MYSQL_ROOT_PASSWORD&#x3D;mysql密码 容器名称</span><br><span class="line"></span><br><span class="line">docker run -di --name&#x3D;mysql5.7 -p 33306:3306 -e MYSQL_ROOT_PASSWORD&#x3D;123456 centos&#x2F;mysql-57-centos7</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231639.png" alt="image-20201201231639562"></p>
+<p>（3）远程登录mysql</p>
+<p>连接宿主机的IP ,指定端口为33306</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201231807.png" alt="image-20201201231807283"></p>
+<h2 id="4-2-tomcat部署"><a href="#4-2-tomcat部署" class="headerlink" title="4.2 tomcat部署"></a>4.2 tomcat部署</h2><p>（1）拉取镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull tomcat:7-jre7</span><br></pre></td></tr></table></figure>
+
+<p>tomcat9 有待解决bug</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201232150.png" alt="image-20201201232150845"></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233226.png" alt="image-20201201233226259"></p>
+<p>（2）创建容器</p>
+<p>创建容器 -p表示地址映射 -v 表示目录挂载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 创建tomcat容器;并挂载了webapps目录</span><br><span class="line">docker run -di --name&#x3D;mytomcat -p 9000:8080 -v &#x2F;usr&#x2F;local&#x2F;webapps:&#x2F;usr&#x2F;local&#x2F;tomcat&#x2F;webapps tomcat:7-jre7</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233315.png" alt="image-20201201233315844"></p>
+<p>本地的war包 ，上传到docker容器里面</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201232508.png" alt="image-20201201232507928"></p>
+<p>ls 查看 dubbo的war 是否已经上传到docker容器，上传成功之后，请求 <code>http://192.168.43.129:9000/dubbo-admin-2.6.0/</code></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233425.png" alt="image-20201201233425483"></p>
+<h2 id="4-3-Nginx部署"><a href="#4-3-Nginx部署" class="headerlink" title="4.3 Nginx部署"></a>4.3 Nginx部署</h2><p>（1）拉取镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull nginx</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233543.png" alt="image-20201201233543461"></p>
+<p>（2）创建Nginx容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -di --name&#x3D;mynginx -p 80:80 nginx</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233608.png" alt="image-20201201233608728"></p>
+<p>安装完成之后，请求nginx页面</p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233629.png" alt="image-20201201233628994"></p>
+<h2 id="4-4-Redis部署"><a href="#4-4-Redis部署" class="headerlink" title="4.4 Redis部署"></a>4.4 Redis部署</h2><p>（1）拉取镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233734.png" alt="image-20201201233734395"></p>
+<p>（2）创建容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -di --name&#x3D;myredis -p 6379:6379 redis</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201233751.png" alt="image-20201201233751194"></p>
+<p><img src="https://gitee.com/ilusymon/images4md/raw/master/img4md/20201201234030.png" alt="image-20201201234030154"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wxpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -223,154 +636,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/01/Docker/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/01/Tem/" class="archive-article-date">
-  	<time datetime="2020-12-01T02:46:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-01</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/12/02/git/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          git
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/12/01/Tem/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Tem</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/01/Tem/">Tem</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/01/linux%E6%B1%89%E5%8C%96man%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-12-01T02:46:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/01/linux%E6%B1%89%E5%8C%96man%E5%91%BD%E4%BB%A4/">linux汉化man命令</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/30/Ajax%E4%B8%8EJson/" class="archive-article-date">
-  	<time datetime="2020-11-30T00:45:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/30/Ajax%E4%B8%8EJson/">Ajax与Json</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/29/%E5%88%86%E5%B8%83%E5%BC%8FRPC%E6%A1%86%E6%9E%B6Apache%20Dubbo/" class="archive-article-date">
-  	<time datetime="2020-11-29T11:50:35.567Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/29/%E5%88%86%E5%B8%83%E5%BC%8FRPC%E6%A1%86%E6%9E%B6Apache%20Dubbo/">分布式RPC框架Apache Dubbo</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/29/hello-world/" class="archive-article-date">
-  	<time datetime="2020-11-29T09:21:11.840Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -393,8 +767,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
