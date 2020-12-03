@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>git</title>
-    <url>/2020/12/02/git/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Tem</title>
     <url>/2020/12/01/Tem/</url>
     <content><![CDATA[]]></content>
@@ -29,6 +24,11 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>git</title>
+    <url>/2020/12/02/git/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>linux汉化man命令</title>
